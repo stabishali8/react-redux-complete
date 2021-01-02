@@ -1,5 +1,6 @@
 import Ninjas from './Ninjas';
 import React, { Component } from 'react';
+import AddNinja from './AddNinja'
 
 class App extends Component {
   state = {
@@ -16,6 +17,7 @@ class App extends Component {
         <h1>My First React App</h1>
         <p>Welcome</p>
         <Ninjas ninjas={this.state.ninjas} />
+        <AddNinja/>
       </div>
     );
   }
